@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid' ;
+    src: url(fontes/idroid.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*font-family: 'Bebas Neue', cursive;*/
+
+body {
+    margin: 0px;
+    margin-top: 0px;
+    background-color: rgb(255, 255, 230);
+}
+
+
+Header {
+    background-image: linear-gradient( to bottom, #3DDC84,#1A5C37);
+    padding: 10px;
+    height: 152px;
+
+}
+
+h1#tituloprincipal{
+    font-family: 'Bebas Neue', cursive;
+    margin: 0px;
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+h2#subprincipal {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    margin: 20px 0px;
+    text-shadow: 1px 1px 3px black;;
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    word-spacing: 10px;
+    margin-left: 10px;
+}
+
+.navfaleconosco {
+    word-spacing: 0px;
+}
+
+nav > a:hover {
+    text-decoration: none;
+    color: #3DDC84;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+}
+
+article {
+    background-color: white;
+    margin: 0px auto 0px auto;
+    width: 85%;
+    box-shadow: 0px 0px 5px black;
+}
+
+.tituloartigo {
+    color: #22a75c;
+    font-family: 'idroid';
+    letter-spacing: 1px;
+    padding: 10px 15px 0px 15px;
+}
+
+article > p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 15px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.subtituloartigo {
+    color: #22a75c;
+    font-family: 'idroid';
+    letter-spacing: 1px;
+    padding: 0px 15px 0px 15px;
+}
+
+article > p > a {
+    color: #1A5C37;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #22a75c;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+article > p > a::after {
+    content: '🔗';
+}
+
+article > picture > img {
+    display: block;
+    width: 98%;
+    margin: 50px auto;
+}
+
+.descricaoimg {
+    font-style: italic;
+    margin: 0px 15px 0px 15px;
+}
+
+article > p > a:hover {
+    background-color: #3DDC84;
+    color: white;
+}
+
+article > img {
+    display: block;
+    margin: 50px auto;
+}
+
+article > section {
+    display: block;
+    background-color: #1A5C37;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+article > section > iframe {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: #ffffff;
+    width: 85%;
+    margin: auto;
+    box-shadow: 0px 0px 5px black;
+}
+
+div#rodape {
+    width: 90%;
+    margin: 0px auto;    
+}
+
+footer > #rodape > h2 {
+    display: block;
+    background-color: #1A5C37;
+    margin: 0px;
+}
+

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Grafitti' ;
+    src: url(aAnotherTag.otf); format ('opentype'), url (aAnotherTag.ttf); format ('truetype')
+    font-weight: normal;
+    font-style: normal;
+    /* Tipos de format ()
+        -opentype (otf)
+        -truetype (ttf)
+        -embedded-opentype
+        -truetype-aat (Apple Advanced Typography)
+        -svg
+    */
+}
+body {
+    font-family: '', Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Grafitti', Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+}
+
