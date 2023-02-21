@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .d-inline {
+            display: inline;
+            background-color: red;
+            height: 100px; /* Não funciona no inline */
+            width: 100px; /* Não funciona no Inline */
+        }
+
+        .d-block {
+            display: block;
+            background-color: red;
+            margin-bottom: 5px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .d-inline-block {
+            display: inline-block;
+            background-color: red;
+            margin-bottom: 5px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .d-none {
+            display: none;
+            background-color: red;
+            margin-bottom: 5px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Inline</h1>
+    <div class="d-inline">Display Inline 1</div>
+    <div class="d-inline">Display Inline 2</div>
+    <div class="d-inline">Display Inline 3</div>
+    <hr>
+    <!-- Ele não tem um Width e um Height definido, ele apenas se adequa ao elemento. -->
+    <h1>Display Block</h1>
+    <div class="d-block">Display</div>
+    <div class="d-block">Display</div>
+    <div class="d-block">Display</div>
+    <!-- Ele ocupa 100% da margem automaticamente -->
+    <h1>Display Block</h1>
+    <div class="d-inline-block">Display</div>
+    <div class="d-inline-block">Display</div>
+    <div class="d-inline-block">Display</div>
+
+    <h1>Display None</h1>
+    <div class="d-none">Display</div>
+    <div class="d-none">Display</div>
+    <div class="d-none">Display</div>
+</body>
+</html>
