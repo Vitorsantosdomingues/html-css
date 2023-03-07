@@ -8,16 +8,28 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background: black url(imagens/galaxia.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 98vh;
+            background-attachment: fixed;
+            background-position: bottom center;
+            
         }
         
         fieldset {
-            width: 50%;
-            height: 400px;
-            margin: auto;
+            width: 400px;
+            height: 500px;
             padding: 30px;
             text-align: center;
-            border-radius: 25px;
-            background: url();
+            border-radius: 20px;
+            border: 3px solid white black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(17, 17, 17));
+        
         }
 
         fieldset > legend {
@@ -26,41 +38,46 @@
             border: 1px solid black;
             padding: 7px;
             border-radius: 6px;
-            background-color: antiquewhite;
+            background-color: white;
         }
 
-        input {
+        input.caixadp {
             border-radius: 5px;
             border: 1px solid black;
             padding: 6px 5px;
-            margin: auto;
+            margin: 7px;
             text-align: center;
-        }}
+        }
+
+        label.destaquelb {
+            color: white;
+        }
+
+        
 
     </style>
 </head>
 <body>
-    <h1>Exemplo de formulário</h1>
     <form action="cadastro.php" method="get">
     <fieldset>
         <legend>Dados Pessoais</legend>
+        formg
+            <label class="destaquelb" for="iname">Nome</label> <br>
+            <input class="caixadp" type="text" name="name" id="iname" required minlength="3" maxlength="20" autocomplete="name" placeholder="coloque o seu nome">
+        
         <p>
-            <label for="iname">Nome</label> <br>
-            <input type="text" name="name" id="iname" required minlength="3" maxlength="20" autocomplete="name">
+            <label class="destaquelb" for="iemail">Email</label> <br>
+            <input class="caixadp" type="email" name="email" id="iemail" required autocomplete="email" placeholder="coloque o seu email">
         </p>
         <p>
-            <label for="iemail">Email</label> <br>
-            <input type="email" name="email" id="iemail" required autocomplete="email" >
-        </p>
-        <p>
-            <label for="itel">Telefone</label> <br>
-            <input type="tel" name="tel" id="itel" autocomplete="tel-national"
+            <label class="destaquelb" for="itel">Telefone</label> <br>
+            <input class="caixadp" type="tel" name="tel" id="itel" autocomplete="tel-national"
             pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
         </p>                        
     <!-- Estudar mais sobre Expressões Regulares ou RegEx -->
     <p>
-        <input type="submit" value="Enviar">        
-        <input type="reset" value="Limpar">
+        <input class="caixadp" type="submit" value="Enviar">        
+        <input class="caixadp" type="reset" value="Limpar">
     </p>
 </fieldset>
     </form>
